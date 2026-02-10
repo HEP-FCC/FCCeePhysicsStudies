@@ -64,7 +64,7 @@ enough, and 2.81 ab-1 at 365 GeV. This is fine structure.]
 
 #### Coordinators
 - Patrizia Azzi (INFN Padova) - Patrizia.Azzi@cern.ch
-- Emmanuel Perez (CERN) - Emmanuel.Perez@cern.ch
+- David d'Enterria (CERN) - dde@cern.ch
 - Michele Selvaggi (CERN) - michele.Selvaggi@cern.ch
 
 #### Physics Performance meetings
