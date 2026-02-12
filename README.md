@@ -101,7 +101,7 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
     - [Rare](phys-groups/flavour/Rare)
     - [TauEW](phys-groups/flavour/TauEW)
 7. [QCD and gamma-gamma Physics](phys-groups/QCD)
-8. [Precision Calculations](phys-groups/Prec)
+8. [Precision Calculations](phys-groups/prec)
 9. [Global Fits](), shared with Physics Software & Computing
 10. [High Level Reconstruction](),  shared with Physics Software & Computing
 
