@@ -1,13 +1,11 @@
 
-## Welcome to the FCC-ee Physics Performance Documentation
+## Welcome to the FCC-ee Physics Studies Documentation
 
 ### Table of Contents
-0. [Latest Integrated Luminosity Table for Feasibility Study Report](#lumi) 
+0. [Latest Integrated Luminosity Table for Feasibility Study Report](#Lumi) 
 1. [Organisation](#organisation)
 2. [Towards the definition of detector requirements](#towards-the-definition-of-detector-requirements)
-3. [List of Active Case studies (evolving)](#case-studies-evolving-list)
 4. [General information for FCC-ee analyses](#general-information-for-fcc-ee-analyses)
-5. [LOIs submitted to Snowmass](#lois-submitted-to-snowmass)
 5. [Software](#software-documentation-&-links)
 
 -----
@@ -56,8 +54,9 @@ At the ttbar threshold: 0.41 ab-1
     (~2 million ttbar events altogether)
 At 365 GeV: 2.65 ab-1 
 
-[The ttbar points can also be distributed differently: only 0.2 ab-1 for the threshold scan if it is 
-enough, and 2.81 ab-1 at 365 GeV. This is fine structure.]
+Note: The ttbar points can also be distributed differently: only 0.2 ab-1 for the threshold scan if it is 
+enough, and 2.81 ab-1 at 365 GeV. This is fine structure.
+
 -----------
 
 ### Organisation
@@ -76,18 +75,9 @@ O(monthly) meetings: Mondays, 3pm-5pm, CERN time. Usually the third Monday of ea
 
 E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [here](https://e-groups.cern.ch/e-groups/EgroupsSearchForm.do).
 
+### Physics Sub-groups  
 
------
-
-### Towards the definition of detector requirements
-
-**Goal:** Circular colliders have the advantage of delivering collisions to multiple interaction points, which allow different detector designs to be studied and optimized – up to four for FCC-ee. On the one hand, the detectors must satisfy the constraints imposed by the invasive interaction region layout. On the other hand, the performance of heavy-flavour tagging, of particle identification, of tracking and particle-flow reconstruction, and of lepton, jet, missing energy and angular resolution, need to match the physics programme and the exquisite statistical precision offered by FCC-ee. Benchmark physics processes will be used to determine, via appropriate simulations, the requirements on the detector performance or design that must be satisfied to ensure that the systematic uncertainties of the measurements are commensurate with their statistical precision. The usage of the data themselves, in order to reach the challenging goals on the stability and on the alignment of the detector, in particular for the programme at and around the Z peak, will also be studied. In addition, the potential for discovering very weakly coupled new particles, in decays of Z or Higgs bosons, could motivate dedicated detector designs that would increase the efficiency for reconstructing the unusual signatures of such processes. These studies are crucial input to the further optimization of the two concepts described in the Conceptual Design Report, CLD and IDEA, and to the development of new concepts which might actually prove to be better adapted to (part of) the FCC-ee physics programme.
-
-
----------
-
-### Case studies (evolving list) 
-
+<!---
 1. [Electroweak physics at the Z peak](case-studies/lineshape)
 2. [Tau Physics](case-studies/taus)
 3. [Flavour physics](case-studies/flavour)
@@ -96,11 +86,27 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
 6. [Higgs physics](case-studies/higgs)
 7. [Top physics](case-studies/top)
 8. [Direct searches for new physics](case-studies/BSM)
-
+-->
+1. [Electroweak Physics](phys-group/electroweak)
+2. [Higgs Physics](phys-group/higgs)
+3. [BSM Physics](phys-groups/BSM)
+4. [Top Physics](phys-groups/top)
+5. [Flavour Physics](phys-groups/flavour)
+6. [QCD and gamma-gamma Physics](phys-groups/QCD)
+8. [Precision Calculations](phys-groups/Prec)
+9. [Global Fits](), shared with Physics Software & Computing
+10. [High Level Reconstruction](),  shared with Physics Software & Computing
 
 ----------
 
-### General information for FCC-ee analyses
+
+### Physics Studies and their role in the definition of detector requirements
+
+Circular colliders have the advantage of delivering collisions to multiple interaction points, which allow different detector designs to be studied and optimized – up to four for FCC-ee. On the one hand, the detectors must satisfy the constraints imposed by the invasive interaction region layout. On the other hand, the performance of heavy-flavour tagging, of particle identification, of tracking and particle-flow reconstruction, and of lepton, jet, missing energy and angular resolution, need to match the physics programme and the exquisite statistical precision offered by FCC-ee. Benchmark physics processes will be used to determine, via appropriate simulations, the requirements on the detector performance or design that must be satisfied to ensure that the systematic uncertainties of the measurements are commensurate with their statistical precision. The usage of the data themselves, in order to reach the challenging goals on the stability and on the alignment of the detector, in particular for the programme at and around the Z peak, will also be studied. In addition, the potential for discovering very weakly coupled new particles, in decays of Z or Higgs bosons, could motivate dedicated detector designs that would increase the efficiency for reconstructing the unusual signatures of such processes. These studies are crucial input to the further optimization of the  concepts described in the Feasibility Report and to the development of new concepts which might actually prove to be better adapted to (part of) the FCC-ee physics programme.
+
+
+---------
+### General information for FCC-ee analyses -- UPDATE IN PROGRESS
 
 1. [Common event samples](General/README.md#common-event-samples)
 2. [Example analyses and how-to's](General/README.md#example-analyses-and-how-to's)
@@ -135,6 +141,7 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
 
 ----------
 
+<!---
 ### LOIs submitted to Snowmass
 
 - [Initial list of case studies](https://indico.cern.ch/event/951830/contributions/4000220/attachments/2095812/3522643/SNOWMASS21-EF0-NF0-RF0-TF0-IF0-CompF0-017.pdf)
@@ -145,7 +152,9 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
     - Link to the [Snowmass portal](https://web.archive.org/web/20250227025314/https://atlaswww.hep.anl.gov/snowmass21/doku.php) [Internet archive snapshot from February 20, 2025]
 
 ----------
- 
+--> 
+
+
 ### Software Documentation & Links
 
 #### Software tutorials
