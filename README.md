@@ -78,7 +78,7 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
 -->
 
 
-### Physics Sub-groups  
+### Physics Groups Structure
 
 <!---
 1. [Electroweak physics at the Z peak](case-studies/lineshape)
