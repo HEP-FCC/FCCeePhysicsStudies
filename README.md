@@ -66,14 +66,17 @@ enough, and 2.81 ab-1 at 365 GeV. This is fine structure.
 - David d'Enterria (CERN) - dde@cern.ch
 - Michele Selvaggi (CERN) - michele.Selvaggi@cern.ch
 
-#### Physics Performance meetings
+#### Physics Indico Categories (coming soon)
 
+<!---
 O(monthly) meetings: Mondays, 3pm-5pm, CERN time. Usually the third Monday of each month. 
 - [indico category "Physics Performance"](https://indico.cern.ch/category/12894/).
 - [indico category for the meetings of the Physics Groups](https://indico.cern.ch/category/15156/)
 
 
 E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [here](https://e-groups.cern.ch/e-groups/EgroupsSearchForm.do).
+-->
+
 
 ### Physics Sub-groups  
 
@@ -91,8 +94,13 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
 2. [Higgs Physics](phys-group/higgs)
 3. [BSM Physics](phys-groups/BSM)
 4. [Top Physics](phys-groups/top)
-5. [Flavour Physics](phys-groups/flavour)
-6. [QCD and gamma-gamma Physics](phys-groups/QCD)
+5. [Flavour Physics](phys-groups/flavour) & subgroup structure
+    - [Charm](phys-groups/flavour/charm)
+    - [CPC](phys-groups/flavour/CPC)
+    - [CPV](phys-groups/flavour/CPV)
+    - [Rare](phys-groups/flavour/Rare)
+    - [TauEW](phys-groups/flavour/TauEW)
+7. [QCD and gamma-gamma Physics](phys-groups/QCD)
 8. [Precision Calculations](phys-groups/Prec)
 9. [Global Fits](), shared with Physics Software & Computing
 10. [High Level Reconstruction](),  shared with Physics Software & Computing
@@ -105,11 +113,12 @@ E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [
 Circular colliders have the advantage of delivering collisions to multiple interaction points, which allow different detector designs to be studied and optimized – up to four for FCC-ee. On the one hand, the detectors must satisfy the constraints imposed by the invasive interaction region layout. On the other hand, the performance of heavy-flavour tagging, of particle identification, of tracking and particle-flow reconstruction, and of lepton, jet, missing energy and angular resolution, need to match the physics programme and the exquisite statistical precision offered by FCC-ee. Benchmark physics processes will be used to determine, via appropriate simulations, the requirements on the detector performance or design that must be satisfied to ensure that the systematic uncertainties of the measurements are commensurate with their statistical precision. The usage of the data themselves, in order to reach the challenging goals on the stability and on the alignment of the detector, in particular for the programme at and around the Z peak, will also be studied. In addition, the potential for discovering very weakly coupled new particles, in decays of Z or Higgs bosons, could motivate dedicated detector designs that would increase the efficiency for reconstructing the unusual signatures of such processes. These studies are crucial input to the further optimization of the  concepts described in the Feasibility Report and to the development of new concepts which might actually prove to be better adapted to (part of) the FCC-ee physics programme.
 
 
+<!---
 ---------
 ### General information for FCC-ee analyses -- UPDATE IN PROGRESS
 
 1. [Common event samples](General/README.md#common-event-samples)
-2. [Example analyses and how-to's](General/README.md#example-analyses-and-how-to's)
+3. [Example analyses and how-to's](General/README.md#example-analyses-and-how-to's)
     1. [Basics](General/README.md#Basics)
     2. [How to associate RecoParticles with Monte-Carlo Particles](General/README.md#How-to-associate-RecoParticles-with-Monte-Carlo-Particles)
     3. [How to navigate through the history of the Monte-Carlo particles](General/README.md#How-to-navigate-through-the-history-of-the-Monte-Carlo-particles)
@@ -117,29 +126,26 @@ Circular colliders have the advantage of delivering collisions to multiple inter
     5. [How to fit tracks to a common vertex](General/README.md#How-to-fit-tracks-to-a-common-vertex)
     6. [How to run jet algorithms](General/README.md#How-to-run-jet-algorithms)
     7. [How to run kinematic fits](General/README.md#How-to-run-kinematic-fits)
-3. [Code development](General/README.md#code-development)
-4. [To produce your own Delphes samples](General/README.md#to-produce-your-own-delphes-samples)
+4. [Code development](General/README.md#code-development)
+5. [To produce your own Delphes samples](General/README.md#to-produce-your-own-delphes-samples)
     1. [Quick instructions for producing samples](General/README.md#quick-instructions-for-producing-samples)
     2. [Make simple changes to the tracker or beam-pipe description in Delphes](General/README.md#make-simple-changes-to-the-tracker-or-beam-pipe-description-in-delphes)
-    1. [Change the Jet algorithms](General/README.md#change-the-jet-algorithm-in-the-delphes-interface)
-5. [The five-parameter tracks produced by the Delphes interface](General/README.md#the-five-parameter-tracks-produced-by-the-delphes-interface)
-6. [Vertexing and flavour tagging](General/README.md#vertexing-and-flavour-tagging)
+    1. [Change the Jet algorithms](General/README.md#change-the-jet-algorithm-in-the-delphes-interface)   
+6. [The five-parameter tracks produced by the Delphes interface](General/README.md#the-five-parameter-tracks-produced-by-the-delphes-interface)
+7. [Vertexing and flavour tagging](General/README.md#vertexing-and-flavour-tagging)
     1. [Vertex-fitter code from Franco Bedeschi](General/README.md#vertex-fitter-code-from-franco-bedeschi)
     2. [Vertexing with the ACTS suite](General/README.md#vertexing-with-the-acts-suite)
     3. [The LCFI+ algorithm](General/README.md#the-LCFIPlus-algorithm)
     4. [The DecayTreeFitter (DTF) algorithm](General/README.md#the-decaytreefitter-(dtf)-algorithm)
     5. [Flavour tagging using machine learning](General/README.md#flavour-tagging-using-machine-learning)
-7. [Making particle combinations with awkward arrays](General/README.md#making-particle-combinations-with-awkward-arrays)
-8. [Generating events under realistic FCC-ee environment conditions](General/README.md#generating-events-under-realistic-fcc-ee-environment-conditions)
+8. [Making particle combinations with awkward arrays](General/README.md#making-particle-combinations-with-awkward-arrays)
+9. [Generating events under realistic FCC-ee environment conditions](General/README.md#generating-events-under-realistic-fcc-ee-environment-conditions)
     1. [Beam energy spread](General/README.md#beam-energy-spread)
     2. [Vertex distribution](General/README.md#vertex-distribution)
     3. [Transverse boost to account for the crossing angle](General/README.md#transverse-boost-to-account-for-the-crossing-angle)
-9. [Monte-Carlo programs](General/README.md#monte-carlo-programs)
-10. [Bibliography](General/README.md#bibliography)
-
-
-
-----------
+10. [Monte-Carlo programs](General/README.md#monte-carlo-programs)
+11. [Bibliography](General/README.md#bibliography)
+-->
 
 <!---
 ### LOIs submitted to Snowmass
@@ -151,20 +157,17 @@ Circular colliders have the advantage of delivering collisions to multiple inter
     - LOIs sent by the [CALICE](https://agenda.linearcollider.org/event/8647/) collaboration
     - Link to the [Snowmass portal](https://web.archive.org/web/20250227025314/https://atlaswww.hep.anl.gov/snowmass21/doku.php) [Internet archive snapshot from February 20, 2025]
 
+--->
 ----------
---> 
-
-
 ### Software Documentation & Links
 
 #### Software tutorials
 
 - the [FCCSW tutorials](https://hep-fcc.github.io/fcc-tutorials/)
-- the tutorials given for Snowmass (September 2020) have been recorded, see [here](https://indico.cern.ch/event/945608/timetable/#20200922.detailed) and [here](https://indico.cern.ch/event/949950/timetable/?layout=room#20200929.detailed)
 - the extremely useful [FCCSW FORUM page](https://fccsw-forum.web.cern.ch/)
 
-
 #### Useful repositories
+
 - [FCCSW](https://github.com/HEP-FCC/FCCSW)
 - [DELPHES]( https://github.com/delphes/delphes)
 - [DD4Hep](https://github.com/AIDASoft/DD4hep)
