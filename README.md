@@ -7,9 +7,7 @@
 2. [Latest Integrated Luminosity Table for Feasibility Study Report](#Lumi) 
 3. [Towards the definition of detector requirements](#towards-the-definition-of-detector-requirements)
 4. [Software](#software-documentation-&-links)
-<!---
-4. [General information for FCC-ee analyses](#general-information-for-fcc-ee-analyses)
--->
+
 
 ### Organisation
 
