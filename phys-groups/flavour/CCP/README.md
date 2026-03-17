@@ -1,4 +1,4 @@
-
+# Charged Current Processes (CCP) group
 - [Contact Info](#contact-info)
 - [All studies in CCP group](#all-studies-in-ccp-group)
   - [Experimental studies](#experimental-studies)
@@ -10,11 +10,11 @@
 #### e-group: FCC-PED-PhysicsGroup-Flavours-CPC@cern.ch
 #### Mattermost: https://mattermost.web.cern.ch/fcc-ped/channels/flavour-cpc
 #### Conveners: FCC-PED-PhysicsGroup-Flavours-CPC-admin@cern.ch
-Cristina Agapopoulou (christina.agapopoulou@cern.ch)
-Andreas Jüttner (andreas.juttner@cern.ch)
-Markus Prim (markus.prim@uni-bonn.de)
-Dean Robinson (drobinson@lbl.gov)
-Raynette van Tonder (raynette.vantonder@kit.edu)
+Cristina Agapopoulou (christina.agapopoulou@cern.ch)\
+Andreas Jüttner (andreas.juttner@cern.ch)\
+Markus Prim (markus.prim@uni-bonn.de)\
+Dean Robinson (drobinson@lbl.gov)\
+Raynette van Tonder (raynette.vantonder@kit.edu)\
 Xunwu Zuo (xunwu.zuo@cern.ch)
 
 #### Indico: https://indico.cern.ch/category/21146/
