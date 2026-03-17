@@ -1,4 +1,10 @@
-[TOC]
+
+- [Contact Info](#contact-info)
+- [All studies in CCP group](#all-studies-in-ccp-group)
+  - [Experimental studies](#experimental-studies)
+  - [Technical studies](#technical-studies)
+  - [Theory](#theory)
+  - [Other contributions](#other-contributions)
 
 ## Contact Info
 #### e-group: FCC-PED-PhysicsGroup-Flavours-CPC@cern.ch
@@ -31,7 +37,7 @@ Xunwu Zuo (xunwu.zuo@cern.ch)
 | Hadronization fraction       | Bc fraction                         | To decide methodology                     |                                                                                                 |
 
 
-### Technical
+### Technical studies
 
 | Topic                     | Study                  | Status            | Contact                                                                                                                                              |
 | ------------------------- | ---------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
