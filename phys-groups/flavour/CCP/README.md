@@ -45,6 +45,7 @@ Xunwu Zuo (xunwu.zuo@cern.ch)
 |                           | DFEI (LHCb style)      | Planned + ongoing | Elena Graverini (elena.graverini@cern.ch), Felipe Luan Souza De Almeida (felipe.luan@cern.ch), Rafael Silva Coutinho (rafael.silva.coutinho@cern.ch) |
 |                           |                        |                   |                                                                                                                                                      |
 | Flavour tagging           | Hadron flavour tagging | Planned + ongoing | Lesya Shchutska (lesya.shchutska@cern.ch), Xunwu Zuo (xunwu.zuo@cern.ch)                                                                             |
+| polarized $\Lambda_b$     | usage and physics cases| Planned + shared with Rare decay group   | Markus Prim (markus.prim@uni-bonn.de), Dean Robinson (drobinson@lbl.gov)                                                                                                                                                     |
 
 
 
