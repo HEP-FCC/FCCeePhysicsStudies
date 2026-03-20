@@ -3,7 +3,7 @@
 - [Meetings](#meetings)
   - [Working Group Meetings](#working-group-meetings)
   - [In Person Workshops](#in-person-workshops)
-- [Studies in TauEW Decay Group](#all-studies-in-rare-decay-group)
+- [Target Studies for the Workshop](#all-studies-in-rare-decay-group)
 - [Tau Reconstruction Tools](#tau-reconstruction)
 
 ## Contact Info
@@ -15,10 +15,10 @@ conveners: [FCC-PED-PhysicsGroup-Flavours-TauEW-admin@cern.ch](mailto:FCC-PED-Ph
 ### Conveners: 
 
 
-## Target Studies in TauEW Decay Group
+## Target Studies for the Workshop
 
 
-## Tau reconstruction Tools 
+## Tau Reconstruction Tools 
 
 
 ## Meetings
