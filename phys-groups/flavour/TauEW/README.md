@@ -21,11 +21,18 @@ conveners: [FCC-PED-PhysicsGroup-Flavours-TauEW-admin@cern.ch](mailto:FCC-PED-Ph
 [https://mattermost.web.cern.ch/fcc-ped/channels/flavour-tauew](https://mattermost.web.cern.ch/fcc-ped/channels/flavour-tauew)
 
 
+## Studies
 
+(To be filled with the list of studies targetted for the workshop (both past, ongoing, and uncovered))
 
-## Target Studies
+If you spot any missing studies, or missing name, don't hestitate to contact the conveners.
 
-To be filled with the list of studies targetted for the workshop (both past, ongoing, and uncovered)
+| Topic   |  Known contributors  |  Documentation | Status      |
+|---------|:--------------------:|---------------:|-------------|
+| xxx     |  X, Y, Z             | link           | on-going    |
+| xxx     |  X, Y, Z             | link           | published   |
+| xxx     |  X, Y, Z             | link           | not started |
+
 
 ## Tau Reconstruction Tools 
 
