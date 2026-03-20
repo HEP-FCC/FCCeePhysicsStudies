@@ -1,22 +1,31 @@
 # Tau and Selected ElectroWeak Working group
 - [Contact Info](#contact-info)
+- [Target Studies](#all-studies-in-tauew)
+- [Tau Reconstruction Tools](#tau-reconstruction)
 - [Meetings](#meetings)
   - [Working Group Meetings](#working-group-meetings)
   - [In Person Workshops](#in-person-workshops)
-- [Target Studies for the Workshop](#all-studies-in-rare-decay-group)
-- [Tau Reconstruction Tools](#tau-reconstruction)
 
 ## Contact Info
+### Conveners: 
+María Cepeda (CIEMAT)
+Romain Madar (LPCA)
+Aurelien Martens (IJCLab)
+Emilie Passemar (Indiana U. and IFIC)
+Olcyr Sumensari (IJCLab)
+
 ### E-Mail Lists:
 e-group: [FCC-PED-PhysicsGroup-Flavours-TauEW@cern.ch](mailto:FCC-PED-PhysicsGroup-Flavours-TauEWe@cern.ch)\
 conveners: [FCC-PED-PhysicsGroup-Flavours-TauEW-admin@cern.ch](mailto:FCC-PED-PhysicsGroup-Flavours-TauEW-admin@cern.ch)
 ### Mattermost: 
 [https://mattermost.web.cern.ch/fcc-ped/channels/flavour-tauew](https://mattermost.web.cern.ch/fcc-ped/channels/flavour-tauew)
-### Conveners: 
 
 
-## Target Studies for the Workshop
 
+
+## Target Studies
+
+To be filled with the list of studies targetted for the workshop (both past, ongoing, and uncovered)
 
 ## Tau Reconstruction Tools 
 
