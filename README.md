@@ -13,33 +13,20 @@
 
 #### Coordinators
 - Patrizia Azzi (INFN Padova) - Patrizia.Azzi@cern.ch
+- Jorge De Blas (U. Granada) - deblasm@ugr.es
 - David d'Enterria (CERN) - dde@cern.ch
+- Matthew Mc Coullogh (CERN) - matthew.mccullough@cern.ch
 - Michele Selvaggi (CERN) - michele.Selvaggi@cern.ch
 
-#### Physics Indico Categories (coming soon)
+#### Physics Indico Categories 
 
-<!---
-O(monthly) meetings: Mondays, 3pm-5pm, CERN time. Usually the third Monday of each month. 
-- [indico category "Physics Performance"](https://indico.cern.ch/category/12894/).
-- [indico category for the meetings of the Physics Groups](https://indico.cern.ch/category/15156/)
-
-
-E-group used for announcements: **FCC-PED-FeasibilityStudy**. To subscribe, go [here](https://e-groups.cern.ch/e-groups/EgroupsSearchForm.do).
--->
+- [Physics Studies Indico Category](...) 
+- Physics Coordination Meetings: monthly, Thursday 2PM, E-group used for announcements: **FCC-PED-PhysicsCoordinationGroup@cern.ch** 
+- [Physics Groups Indico Category](https://indico.cern.ch/category/15156/)
 
 
 ### Physics Groups Structure
 
-<!---
-1. [Electroweak physics at the Z peak](case-studies/lineshape)
-2. [Tau Physics](case-studies/taus)
-3. [Flavour physics](case-studies/flavour)
-4. [WW threshold](case-studies/ww)
-5. [QCD measurements](case-studies/QCD)
-6. [Higgs physics](case-studies/higgs)
-7. [Top physics](case-studies/top)
-8. [Direct searches for new physics](case-studies/BSM)
--->
 1. [Electroweak Physics](phys-groups/electroweak)
 2. [Higgs Physics](phys-groups/higgs)
 3. [BSM Physics](phys-groups/BSM)
