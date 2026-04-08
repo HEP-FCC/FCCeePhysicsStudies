@@ -26,7 +26,8 @@ Eluned Smith [eluned@mit.edu](mailto:eluned@mit.edu)
 ### Working Group Meetings
 #### Meeting 1: February 9, 2026 
 indico: [https://indico.cern.ch/event/1637188/](https://indico.cern.ch/event/1637188/)
-#### Meeting 2: May?
+#### Meeting 2: April 24, 2026
+indico: [https://indico.cern.ch/event/1672830/](https://indico.cern.ch/event/1672830/)
 
 ### In Person Workshops
 #### Flavours at FCC-ee Kick-of event: CERN, November 19-21, 2025 
