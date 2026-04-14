@@ -1,0 +1,346 @@
+diff --git a/analyzers/dataframe/src/JetConstituentsUtils.cc b/analyzers/dataframe/src/JetConstituentsUtils.cc
+index 4297ece..b921127 100644
+--- a/analyzers/dataframe/src/JetConstituentsUtils.cc
++++ b/analyzers/dataframe/src/JetConstituentsUtils.cc
+@@ -769,7 +769,7 @@ namespace FCCAnalyses
+         {
+           if (ct.at(j).clusters_begin < nhdata.size() + gammadata.size())
+           {
+-            if (ct.at(j).PDG == 130)
++            if (ct.at(j).type == 130)
+             {
+               // this assumes that in converter photons are filled first and nh after
+               float T = calohits.at(nhdata.at(ct.at(j).clusters_begin - gammadata.size()).hits_begin).time;
+@@ -795,7 +795,7 @@ namespace FCCAnalyses
+                 tmp.push_back((9.));
+               }
+             }
+-            else if (ct.at(j).PDG == 22)
++            else if (ct.at(j).type == 22)
+             {
+               tmp.push_back((0.));
+             }
+@@ -1152,7 +1152,7 @@ namespace FCCAnalyses
+         FCCAnalysesJetConstituents ct = jcs.at(i);
+         for (int j = 0; j < ct.size(); ++j)
+         {
+-          if (ct.at(j).PDG == 130)
++          if (ct.at(j).type == 130)
+           {
+             is_NeutralHad.push_back(1.);
+           }
+@@ -1173,7 +1173,7 @@ namespace FCCAnalyses
+         FCCAnalysesJetConstituents ct = jcs.at(i);
+         for (int j = 0; j < ct.size(); ++j)
+         {
+-          if (ct.at(j).PDG == 22)
++          if (ct.at(j).type == 22)
+           {
+             is_NeutralHad.push_back(1.);
+           }
+diff --git a/analyzers/dataframe/src/ReconstructedParticle.cc b/analyzers/dataframe/src/ReconstructedParticle.cc
+index 1f58606..f20c954 100644
+--- a/analyzers/dataframe/src/ReconstructedParticle.cc
++++ b/analyzers/dataframe/src/ReconstructedParticle.cc
+@@ -17,7 +17,7 @@ ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> sel_type::operator()(
+   ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> result;
+   result.reserve(in.size());
+   for (size_t i = 0; i < in.size(); ++i) {
+-    if (in[i].PDG == m_type) {
++    if (in[i].type == m_type) {
+       result.emplace_back(in[i]);
+     }
+   }
+@@ -37,7 +37,7 @@ ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> sel_absType::operator()(
+   ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> result;
+   result.reserve(in.size());
+   for (size_t i = 0; i < in.size(); ++i) {
+-    if (std::abs(in[i].PDG) == m_type) {
++    if (std::abs(in[i].type) == m_type) {
+       result.emplace_back(in[i]);
+     }
+   }
+@@ -541,7 +541,7 @@ ROOT::VecOps::RVec<int>
+ get_type(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> in){
+   ROOT::VecOps::RVec<int> result;
+   for (auto & p: in) {
+-    result.push_back(p.PDG);
++    result.push_back(p.type);
+   }
+   return result;
+ }
+diff --git a/analyzers/dataframe/src/SmearObjects.cc b/analyzers/dataframe/src/SmearObjects.cc
+index 6bcd749..28543a8 100644
+--- a/analyzers/dataframe/src/SmearObjects.cc
++++ b/analyzers/dataframe/src/SmearObjects.cc
+@@ -530,7 +530,7 @@ SmearedReconstructedParticle::operator()(
+     edm4hep::ReconstructedParticleData reco_part = allRecoParticles[ipart];
+     edm4hep::ReconstructedParticleData smeared_part = reco_part;
+ 
+-    int reco_part_type = abs(reco_part.PDG);
++    int reco_part_type = abs(reco_part.type);
+ 
+     // have to manually infer pid of ele/mu from mass because type not stored in
+     // reco particles
+@@ -611,7 +611,7 @@ SmearedReconstructedParticle::operator()(
+         smeared_part.momentum.z = gen_p4.Pz();
+ 
+         // set type
+-        smeared_part.PDG = mc_part.PDG;
++        smeared_part.type = mc_part.PDG;
+       }
+ 
+       if (m_debug) {
+@@ -625,7 +625,7 @@ SmearedReconstructedParticle::operator()(
+                   << " " << reco_p4.P() << " " << reco_p4.Theta() << " "
+                   << reco_p4.Phi() << " " << reco_p4.M() << std::endl;
+         std::cout << "smeared part (PID, p, theta, phi, m): "
+-                  << smeared_part.PDG << " " << smeared_p4.P() << " "
++                  << smeared_part.type << " " << smeared_p4.P() << " "
+                   << smeared_p4.Theta() << " " << smeared_p4.Phi() << " "
+                   << smeared_p4.M() << std::endl;
+       }
+diff --git a/analyzers/dataframe/src/myUtils.cc b/analyzers/dataframe/src/myUtils.cc
+index 983adb6..e348dd4 100644
+--- a/analyzers/dataframe/src/myUtils.cc
++++ b/analyzers/dataframe/src/myUtils.cc
+@@ -968,8 +968,8 @@ ROOT::VecOps::RVec<FCCAnalysesComposite> build_Bu2D0Pi(ROOT::VecOps::RVec<edm4he
+     //std::cout << "index sise "<< d0index.size() << " ind 0 " << d0index.at(0)<< " ind 1 " << d0index.at(1)  <<std::endl;
+     //std::cout << " recop.at(index.at(0)) "<<recop.at(d0index.at(0)).type<< " recop.at(index.at(1)) "<<recop.at(d0index.at(1)).type<< std::endl;
+ 
+-    if (recop.at(d0index.at(0)).PDG==321)kaoncharge=recop.at(d0index.at(0)).charge;
+-    else if (recop.at(d0index.at(1)).PDG==321)kaoncharge=recop.at(d0index.at(1)).charge;
++    if (recop.at(d0index.at(0)).type==321)kaoncharge=recop.at(d0index.at(0)).charge;
++    else if (recop.at(d0index.at(1)).type==321)kaoncharge=recop.at(d0index.at(1)).charge;
+     else std::cout <<"huston there iis a problem no kaon found build_Bu2D0Pi" <<std::endl;
+     for (size_t j = 0; j < pions.size(); ++j) {
+       if (get_p(recop.at(pions.at(j)))<1.)continue;
+@@ -1086,7 +1086,7 @@ ROOT::VecOps::RVec<int> getFCCAnalysesComposite_type(ROOT::VecOps::RVec<FCCAnaly
+   for (auto & p: in) {
+ 
+     int recoind = vertex.at(p.vertex).reco_ind.at(index);
+-    result.push_back(recop.at(recoind).PDG);
++    result.push_back(recop.at(recoind).type);
+   }
+   return result;
+ }
+@@ -1486,7 +1486,7 @@ ROOT::VecOps::RVec<int>
+ sel_PID::operator()(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> recop){
+   ROOT::VecOps::RVec<int> result;
+   for (size_t i = 0; i < recop.size(); ++i) {
+-    if (recop.at(i).PDG==m_PDG)
++    if (recop.at(i).type==m_PDG)
+       result.push_back(i);
+   }
+   return result;
+@@ -1503,7 +1503,7 @@ PID(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> recop,
+ 
+     //id a pion
+     if (fabs(mc.at(mcind.at(i)).PDG)==211){
+-      recop.at(recind.at(i)).PDG = 211;
++      recop.at(recind.at(i)).type = 211;
+       recop.at(recind.at(i)).mass = 0.13957039;
+       recop.at(recind.at(i)).energy = sqrt(pow(recop.at(recind.at(i)).momentum.x,2) +
+ 					   pow(recop.at(recind.at(i)).momentum.y,2) +
+@@ -1512,7 +1512,7 @@ PID(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> recop,
+     }
+     //id a kaon
+     else if (fabs(mc.at(mcind.at(i)).PDG)==321){
+-      recop.at(recind.at(i)).PDG = 321;
++      recop.at(recind.at(i)).type = 321;
+       recop.at(recind.at(i)).mass = 0.493677;
+       recop.at(recind.at(i)).energy = sqrt(pow(recop.at(recind.at(i)).momentum.x,2) +
+ 					   pow(recop.at(recind.at(i)).momentum.y,2) +
+@@ -1521,7 +1521,7 @@ PID(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> recop,
+     }
+     //id a proton
+     else if (fabs(mc.at(mcind.at(i)).PDG)==2212){
+-      recop.at(recind.at(i)).PDG = 2212;
++      recop.at(recind.at(i)).type = 2212;
+       recop.at(recind.at(i)).mass = 0.938272081;
+       recop.at(recind.at(i)).energy = sqrt(pow(recop.at(recind.at(i)).momentum.x,2) +
+ 					   pow(recop.at(recind.at(i)).momentum.y,2) +
+@@ -1530,7 +1530,7 @@ PID(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> recop,
+     }
+     //id an electron
+     else if (fabs(mc.at(mcind.at(i)).PDG)==11){
+-      recop.at(recind.at(i)).PDG = 11;
++      recop.at(recind.at(i)).type = 11;
+       recop.at(recind.at(i)).mass = 0.0005109989461;
+       recop.at(recind.at(i)).energy = sqrt(pow(recop.at(recind.at(i)).momentum.x,2) +
+ 					   pow(recop.at(recind.at(i)).momentum.y,2) +
+@@ -1539,7 +1539,7 @@ PID(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> recop,
+     }
+     //id an muon
+     else if (fabs(mc.at(mcind.at(i)).PDG)==13){
+-      recop.at(recind.at(i)).PDG = 13;
++      recop.at(recind.at(i)).type = 13;
+       recop.at(recind.at(i)).mass = 0.1056583745;
+       recop.at(recind.at(i)).energy = sqrt(pow(recop.at(recind.at(i)).momentum.x,2) +
+ 					   pow(recop.at(recind.at(i)).momentum.y,2) +
+@@ -1613,7 +1613,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_tau23pi(ROOT::VecOps::RVec<Verte
+     bool is3pi=true;
+     int charge=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG!=211)is3pi=false;
++      if (recop.at(r).type!=211)is3pi=false;
+       charge+=recop.at(r).charge;
+     }
+     if (is3pi==false){counter+=1; continue;}
+@@ -1647,7 +1647,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_B2Kstee(ROOT::VecOps::RVec<Verte
+     int charge_ee=0;
+     int nobj_ee=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==11){
++      if (recop.at(r).type==11){
+ 	nobj_ee+=1;
+ 	charge_ee+=recop.at(r).charge;
+       }
+@@ -1656,7 +1656,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_B2Kstee(ROOT::VecOps::RVec<Verte
+     int charge_k=0;
+     int nobj_k=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==321 ){
++      if (recop.at(r).type==321 ){
+ 	nobj_k+=1;
+ 	charge_k+=recop.at(r).charge;
+       }
+@@ -1666,7 +1666,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_B2Kstee(ROOT::VecOps::RVec<Verte
+     int charge_pi=0;
+     int nobj_pi=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==211){
++      if (recop.at(r).type==211){
+ 	nobj_pi+=1;
+ 	charge_pi+=recop.at(r).charge;
+       }
+@@ -1706,7 +1706,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_B2Kstmumu(ROOT::VecOps::RVec<Ver
+     int charge_mumu=0;
+     int nobj_mumu=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==13){
++      if (recop.at(r).type==13){
+ 	nobj_mumu+=1;
+ 	charge_mumu+=recop.at(r).charge;
+       }
+@@ -1716,7 +1716,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_B2Kstmumu(ROOT::VecOps::RVec<Ver
+     int charge_k=0;
+     int nobj_k=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==321 ){
++      if (recop.at(r).type==321 ){
+ 	nobj_k+=1;
+ 	charge_k+=recop.at(r).charge;
+       }
+@@ -1726,7 +1726,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_B2Kstmumu(ROOT::VecOps::RVec<Ver
+     int charge_pi=0;
+     int nobj_pi=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==211){
++      if (recop.at(r).type==211){
+ 	nobj_pi+=1;
+ 	charge_pi+=recop.at(r).charge;
+       }
+@@ -1766,7 +1766,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_Bd2KstNuNu(ROOT::VecOps::RVec<Ve
+     int charge_k=0;
+     int nobj_k=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==321 ){
++      if (recop.at(r).type==321 ){
+ 	nobj_k+=1;
+ 	charge_k+=recop.at(r).charge;
+       }
+@@ -1776,7 +1776,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_Bd2KstNuNu(ROOT::VecOps::RVec<Ve
+     int charge_pi=0;
+     int nobj_pi=0;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG==211){
++      if (recop.at(r).type==211){
+ 	nobj_pi+=1;
+ 	charge_pi+=recop.at(r).charge;
+       }
+@@ -1812,7 +1812,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_Bs2PhiNuNu(ROOT::VecOps::RVec<Ve
+     int charge_phi=0;
+     int nobj_phi=0;
+     for (auto &r:vertex.at(i).reco_ind){
+-      if (recop.at(r).PDG==321 ){
++      if (recop.at(r).type==321 ){
+ 	nobj_phi+=1;
+ 	charge_phi+=recop.at(r).charge;
+       }
+@@ -1849,7 +1849,7 @@ ROOT::VecOps::RVec<FCCAnalysesComposite2> build_Bd2MuMu(ROOT::VecOps::RVec<Verte
+     int charge_Bd=0;
+     int nobj_Bd=0;
+     for (auto &r:vertex.at(i).reco_ind){
+-      if (recop.at(r).PDG==13 ){
++      if (recop.at(r).type==13 ){
+ 	nobj_Bd+=1;
+ 	charge_Bd+=recop.at(r).charge;
+       }
+@@ -1889,7 +1889,7 @@ build_tau23pi::operator() (ROOT::VecOps::RVec<VertexingUtils::FCCAnalysesVertex>
+     int charge=0;
+     float angle = -9999999.;
+     for (auto &r:p.reco_ind){
+-      if (recop.at(r).PDG!=211)is3pi=false;
++      if (recop.at(r).type!=211)is3pi=false;
+       if (get_p(recop.at(r))<m_p) pcut=false;
+       charge+=recop.at(r).charge;
+       TVector3 p1( recop.at(r).momentum.x, recop.at(r).momentum.y, recop.at(r).momentum.z );
+diff --git a/tests/unittest/ReconstructedParticle.cpp b/tests/unittest/ReconstructedParticle.cpp
+index f8aadb7..d68e19d 100644
+--- a/tests/unittest/ReconstructedParticle.cpp
++++ b/tests/unittest/ReconstructedParticle.cpp
+@@ -7,42 +7,42 @@
+ TEST_CASE("sel_type", "[ReconstructedParticle]") {
+   ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> pVec;
+   edm4hep::ReconstructedParticleData p1;
+-  p1.PDG = 11;
++  p1.type = 11;
+   pVec.push_back(p1);
+   edm4hep::ReconstructedParticleData p2;
+-  p2.PDG = 13;
++  p2.type = 13;
+   pVec.push_back(p2);
+   edm4hep::ReconstructedParticleData p3;
+-  p3.PDG = -11;
++  p3.type = -11;
+   pVec.push_back(p3);
+   edm4hep::ReconstructedParticleData p4;
+-  p4.PDG = -13;
++  p4.type = -13;
+   pVec.push_back(p4);
+   FCCAnalyses::ReconstructedParticle::sel_type selType{11};
+   auto res = selType(pVec);
+   REQUIRE(res.size() == 1);
+-  REQUIRE(res[0].PDG == 11);
++  REQUIRE(res[0].type == 11);
+ }
+ 
+ TEST_CASE("sel_absType", "[ReconstructedParticle]") {
+   ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> pVec;
+   edm4hep::ReconstructedParticleData p1;
+-  p1.PDG = 11;
++  p1.type = 11;
+   pVec.push_back(p1);
+   edm4hep::ReconstructedParticleData p2;
+-  p2.PDG = 13;
++  p2.type = 13;
+   pVec.push_back(p2);
+   edm4hep::ReconstructedParticleData p3;
+-  p3.PDG = -11;
++  p3.type = -11;
+   pVec.push_back(p3);
+   edm4hep::ReconstructedParticleData p4;
+-  p4.PDG = -13;
++  p4.type = -13;
+   pVec.push_back(p4);
+   FCCAnalyses::ReconstructedParticle::sel_absType selAbsType{11};
+   auto res = selAbsType(pVec);
+   REQUIRE(res.size() == 2);
+-  REQUIRE(res[0].PDG == 11);
+-  REQUIRE(res[1].PDG == -11);
++  REQUIRE(res[0].type == 11);
++  REQUIRE(res[1].type == -11);
+ }
+ 
+ TEST_CASE("sel_absType__neg_type", "[ReconstructedParticle]") {

@@ -1,0 +1,5 @@
+condor/std/
+condor/condor-sub-*.txt
+condor/condor_*.sub
+condor/*.cc
+samples_winter2023.tex
