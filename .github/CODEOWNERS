@@ -1,0 +1,4 @@
+# Codeowners
+
+# Specify code owners for the flavour folder and its subdirectories
+/phys-groups/flavour @monteil
