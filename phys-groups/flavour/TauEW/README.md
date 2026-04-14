@@ -27,14 +27,21 @@ conveners: [FCC-PED-PhysicsGroup-Flavours-TauEW-admin@cern.ch](mailto:FCC-PED-Ph
 
 If you spot any missing studies, or missing name, don't hestitate to contact the conveners.
 
-| Topic   |  Known contributors  |  Documentation | Status      |
-|---------|:--------------------:|---------------:|-------------|
-| xxx     |  X, Y, Z             | link           | on-going    |
-| xxx     |  X, Y, Z             | link           | published   |
-| xxx     |  X, Y, Z             | link           | not started |
+| Topic      |  Known contributors                 |  Documentation | Status      |
+|---------   |:--------------------:               |---------------:|-------------|
+| tau mass   |  M. Niño (UNAL), D. Milanes (UTEC), A. Martens    | [link](https://indico.cern.ch/event/1648232/contributions/6929029/attachments/3228785/5754745/Measurement_of_the_tau_mass_at_FCC_ee.pdf)           | on-going    |
+| rare hadronic decays   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | link          | started    |
+| xxx        |  X, Y, Z                            | link           | on-going    |
+| xxx        |  X, Y, Z                            | link           | published   |
+| xxx        |  X, Y, Z                            | link           | not started |
 
 
 ## Tau Reconstruction Tools 
+
+| Topic      |  Known contributors                 |  Documentation | Status      |
+|---------   |:--------------------:               |---------------:|-------------|
+| generic tau MC decay identifier   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | link          | started    |
+
 
 
 ## Meetings
