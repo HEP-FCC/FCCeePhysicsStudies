@@ -41,7 +41,7 @@ Xunwu Zuo (xunwu.zuo@cern.ch)
 
 | Topic                     | Study                  | Status            | Contact                                                                                                                                              |
 | ------------------------- | ---------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Full event interpretation | FEI (Belle II style)   | Planned           | Markus Prim (markus.prim@uni-bonn.de), Valerio Bertacchi (valerio.bertacchi@cern.ch)                                                                 |
+| Full event interpretation | FEI (Belle II style)   | Planned           | Valerio Bertacchi (valerio.bertacchi@cern.ch)                                                                 |
 |                           | DFEI (LHCb style)      | Planned + ongoing | Elena Graverini (elena.graverini@cern.ch), Felipe Luan Souza De Almeida (felipe.luan@cern.ch), Rafael Silva Coutinho (rafael.silva.coutinho@cern.ch) |
 |                           |                        |                   |                                                                                                                                                      |
 | Flavour tagging           | Hadron flavour tagging | Planned + ongoing | Lesya Shchutska (lesya.shchutska@cern.ch), Xunwu Zuo (xunwu.zuo@cern.ch)                                                                             |
