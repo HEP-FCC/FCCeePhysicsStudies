@@ -26,7 +26,7 @@ conveners: [FCC-PED-PhysicsGroup-Flavours-TauEW-admin@cern.ch](mailto:FCC-PED-Ph
 If you spot any missing studies, or missing name, don't hestitate to contact the conveners (on-going).
 
 | Topic      |  Known contributors                 |  Documentation | Status      |
-|---------   |:--------------------:               |---------------:|-------------|
+|---------   |:--------------------:               |:--------------:|-------------|
 | Tau life time & mass   |  M. Niño (UNAL), D. Milanes (UTEC), A. Martens    | [link](https://indico.cern.ch/event/1648232/contributions/6929029/attachments/3228785/5754745/Measurement_of_the_tau_mass_at_FCC_ee.pdf)           | on-going    |
 | Tau polarization  |  X, Y, Z                            | link           | on-going  |
 | Rare hadronic decays   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | link          | started    |
@@ -40,7 +40,7 @@ If you spot any missing studies, or missing name, don't hestitate to contact the
 ## Tau Reconstruction Tools/studies
 
 | Topic      |  Known contributors                 |  Documentation | Status      |
-|---------   |:--------------------:               |---------------:|-------------|
+|---------   |:--------------------:               |:--------------:|-------------|
 | generic tau MC decay identifier   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | link          | started    |
 | exclusive vs ML-based approach    |                                                       |               | wanted     |
 
@@ -48,8 +48,11 @@ If you spot any missing studies, or missing name, don't hestitate to contact the
 ## Meetings
 
 ### Working Group Meetings
-  + February 27, 2026: https://indico.cern.ch/event/1648232/
-  + March 20, 2026: https://indico.cern.ch/event/1662403/
+  + May 11th, 2026: https://indico.cern.ch/event/1669265/
+  + April 27th, 2026: https://indico.cern.ch/event/1669264/
+  + March 20th, 2026: https://indico.cern.ch/event/1662403/
+  + February 27th, 2026: https://indico.cern.ch/event/1648232/
+
 
 ### In Person Workshops
   + November 2025: https://indico.cern.ch/event/1588013
