@@ -31,7 +31,7 @@ If you spot any missing studies, or missing name, don't hestitate to contact the
 | Tau polarization  |  X, Y, Z                            | link           | on-going  |
 | Rare hadronic decays   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | link          | started    |
 | AFB[tau]     |  W. Weber, S. Monteil, R. Madar, K. Kroeninger  | [link](https://indico.cern.ch/event/1588013/contributions/6767181/) | on-going    |
-| AFB[b], R[b] |  L. Roehrig., S. Monteil, R. Madar, , K. Kroeninger | [PJC 85, 893 (2025)](https://doi.org/10.1140/epjc/s10052-025-14603-1) | published |
+| AFB[b], R[b] |  L. Roehrig., S. Monteil, R. Madar, , K. Kroeninger | [EPJC 85, 893 (2025)](https://doi.org/10.1140/epjc/s10052-025-14603-1) | published |
 | Tau LFV      |  X, Y, Z                            | link           | not started |
 | Tau g-2      |  X, Y, Z                            | link           | not started |
 
@@ -48,9 +48,9 @@ If you spot any missing studies, or missing name, don't hestitate to contact the
 ## Meetings
 
 ### Working Group Meetings
-  + February 27, 2026: [https://indico.cern.ch/event/1648232/]
-  + March 20, 2026: [https://indico.cern.ch/event/1662403/] 
+  + February 27, 2026: https://indico.cern.ch/event/1648232/
+  + March 20, 2026: https://indico.cern.ch/event/1662403/
 
 ### In Person Workshops
-  + November 2025: [https://indico.cern.ch/event/1588013]
-  + June 2026: [https://indico.cern.ch/event/1644557/]
+  + November 2025: https://indico.cern.ch/event/1588013
+  + June 2026: https://indico.cern.ch/event/1644557/
