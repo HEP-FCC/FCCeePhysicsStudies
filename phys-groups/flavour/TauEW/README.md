@@ -34,6 +34,7 @@ If you spot any missing studies, or missing name, don't hestitate to contact the
 | AFB[b], R[b] |  L. Roehrig., S. Monteil, R. Madar, , K. Kroeninger | [EPJC 85, 893 (2025)](https://doi.org/10.1140/epjc/s10052-025-14603-1) | published |
 | Tau LFV      |  X, Y, Z                            | link           | not started |
 | Tau g-2      |  X, Y, Z                            | link           | not started |
+| Tauonium     |  X, Y, Z                            | link           | not started |
 
 
 
@@ -41,9 +42,9 @@ If you spot any missing studies, or missing name, don't hestitate to contact the
 
 | Topic      |  Known contributors                 |  Documentation | Status      |
 |---------   |:--------------------:               |:--------------:|-------------|
-| generic tau MC decay identifier   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | link          | started    |
-| exclusive vs ML-based approach    |                                                       |               | wanted     |
-
+| Generic tau MC decay identifier   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | link          | started    |
+| Exclusive vs ML-based approach    |                                                       |               |            |
+| MC generator and Tau modelling    |                                                       |               |            |
 
 ## Meetings
 
