@@ -5,6 +5,7 @@
 
 | Category                    | Event                                      | Link |
 |----------------------------|--------------------------------------------|------|
+| BSM summary                | FCC-UK PED brainstorming 2026              | <a href="https://indico.cern.ch/event/1679097/">link</a> |
 | Portals                    | CEPC workshop 2026                         | <a href="https://indico.cern.ch/event/1598929/timetable/?view=standard#144-portals-at-fcc-ee" target="_blank">link</a> |
 | BSM session + Giacomo stuff| FCC workshop 2026                          | <a href="https://indico.cern.ch/event/1588696/timetable/#b-642569-parallel-physics" target="_blank">link</a> |
 | BSM summary                | FCC week 2025                              | <a href="https://indico.cern.ch/event/1408515/timetable/#240-review-bsm" target="_blank">link</a> |
