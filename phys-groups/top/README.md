@@ -6,6 +6,7 @@
 
 ## Contact Info
 #### e-group: FCC-PED-PhysicsGroup-Top@cern.ch
+#### mattermost: https://mattermost.web.cern.ch/fcc-physics-top/channels/town-square
 #### Conveners:
 Gauthier Durieux (gauthier.durieux@uclouvain.be)\
 Christian Schwanenberger (christian.schwanenberger@cern.ch)\
