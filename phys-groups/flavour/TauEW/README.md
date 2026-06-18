@@ -35,7 +35,7 @@ If you spot any missing studies or missing name, don't hesitate to contact the c
 | AFB[b], R[b] |  L. Roehrig., S. Monteil, R. Madar, , K. Kroeninger | [EPJC 85, 893 (2025)](https://doi.org/10.1140/epjc/s10052-025-14603-1) | published |
 | Tau LFV  (exp)    |  A. Lusiani (Pisa), M. Kazanecki (Polish Academy of Sciences), C. Martin (CIEMAT)                            | -           | starting |
 | Tau LFV  (theo)    |  O. Sumensari (IJCLab), C. Cornella, P. Paradisi, E. Scantamburlo (Padua), L. Leal (USP), L. Allwicher (DESY)                            |  20/March: [1](https://indico.cern.ch/event/1662403/#3-exploring-lfv-decays-at-fcc) [2](https://indico.cern.ch/event/1662403/#4-impact-of-z-decays-on-lfv-th)         | on-going |
-| LFU |  ? | ? | - | 
+| LFU |  A. Lusiani (Pisa)  | - | - | 
 | Tau g-2 (exp)     |  M. Pitt (CERN)                            | [Talk 27/Apr](https://indico.cern.ch/event/1669264/contributions/7025175/attachments/3263957/5828914/Tau_g2_MPitt.pdf)           | on-going |
 | Tau g-2 (theo)    |  G. Levati (Bern)                                | [Talk 27/Apr](https://indico.cern.ch/event/1669264/contributions/7025175/attachments/3263957/5828914/Tau_g2_MPitt.pdf)           | on-going |
 | Quantum tomography | G. García Mir, JM Camacho, M. Vos, M, Moreno Llácer, K. Wandall-Christensen (IFIC, CSIC-UV), D. Jeans (KEK) |  27/April: [1](https://indico.cern.ch/event/1669264/#5-entanglement-and-decoherence) [2](https://indico.cern.ch/event/1669264/#4-quantum-tomography-of-tau-le) | on-going |
