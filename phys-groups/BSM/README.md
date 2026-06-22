@@ -5,6 +5,7 @@
 
 | Category                    | Event                                      | Link |
 |----------------------------|--------------------------------------------|------|
+| LLP/HNL/ALPS and other BSM searches + BSM Physics at FCC-ee: Status and Plans                | FCC week 2026              | <a href="https://indico.cern.ch/event/1552126/">link</a> |
 | BSM summary                | FCC-UK PED brainstorming 2026              | <a href="https://indico.cern.ch/event/1679097/">link</a> |
 | Portals                    | CEPC workshop 2026                         | <a href="https://indico.cern.ch/event/1598929/timetable/?view=standard#144-portals-at-fcc-ee" target="_blank">link</a> |
 | BSM session + Giacomo stuff| FCC workshop 2026                          | <a href="https://indico.cern.ch/event/1588696/timetable/#b-642569-parallel-physics" target="_blank">link</a> |
