@@ -9,4 +9,4 @@
 | [2604.14281](https://arxiv.org/abs/2604.14281) | Probing τ lepton dipole moments at future Lepton Colliders | D. Buttazzo, G. Levati, Y. Ma, F. Maltoni, P. Paradisi, Z. Wang| |
 | [2605.21452](https://arxiv.org/abs/2605.21452) | | | [28/4/26] |
 | [2606.07232](https://arxiv.org/abs/2606.07232) | Current and future constraints on heavy New Physics from τ weak dipole moments | N. Kosnik, Z. Polonsky, A. Smolkovic| |
-
+| [2608.05874](https://arxiv.org/abs/2608.05874) | Descoped and Upscoped FCC-ee Running Scenarios in the SMEFT | Eugenia Celada, Elie Hammou, Jaco ter Hoeve, Marion O.A. Thomas | |
