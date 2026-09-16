@@ -466,7 +466,18 @@ Vertex σ<sub>y</sub> (nm) | 23.8  | 46.5 | 25.4 | 48.8
 Vertex σ<sub>z</sub> (mm) | 0.397 | 0.97 | 0.65 |1.33 
 Vertex σ<sub>t</sub> (ps) | 36.3 | 18.9 | 14.1 | 6.5 
 
+**Summary table, FSR parameters (2025):**
+https://arxiv.org/pdf/2505.00274 (Table 2, p. 5)
 
+  Ebeam (GeV)  |  45.6  |  80  |  120  |  182.5  
+------------|--------|------|-------|----------------
+σ<sub>x</sub> (µm)  |  9    |  22   |  13   |  37
+σ<sub>y</sub> (nm)  |  40   |  45   |  32   |  44
+σ<sub>z</sub> (mm)  |  15.2 |  5.28 |  5.59 |  2.33
+Vertex σ<sub>x</sub> (µm) | 6.36 | 15.56 | 9.19 | 26.17
+Vertex σ<sub>y</sub> (nm) | 28.3 | 31.8 | 22.6 | 31.1
+Vertex σ<sub>z</sub> (mm) | 0.424 | 0.999 | 0.606 | 1.198
+Vertex σ<sub>t</sub> (ps) | 35.9 | 12.5 | 13.2 | 5.50
 
 #### Transverse boost to account for the crossing angle
 
