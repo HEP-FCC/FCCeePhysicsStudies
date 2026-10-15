@@ -28,12 +28,12 @@ If you spot any missing studies or missing name, don't hesitate to contact the c
 | Topic      |  Known contributors                 |  Documentation | Status      |
 |---------   |:--------------------:               |:--------------:|-------------|
 | Tau lifetime & mass   |  M. Niño (UNAL), D. Milanes (UTEC), A. Martens    | [Talk 27/Feb](https://indico.cern.ch/event/1648232/contributions/6929029/attachments/3228785/5754745/Measurement_of_the_tau_mass_at_FCC_ee.pdf) [Talk 18/May](https://indico.cern.ch/event/1669265/contributions/7084028/attachments/3276695/5854673/TauMassReconstruction_FCCee_May.pdf) | on-going    |
-| Tau polarization  |  O. Arquero, M.Cepeda (CIEMAT) et al.               | [Talk FCC Physics Days](https://indico.cern.ch/event/1588696/contributions/6857204/attachments/3208980/5715120/Tau%20Polarization@FCCee.pdf)           | on-going  |
+| Tau polarization  |  O. Arquero, M.Cepeda (CIEMAT) et al.               | [Talk June Workshop](https://indico.cern.ch/event/1644557/timetable/#52-experimental-studies-on-tau) [Talk ILD vs CLD](https://agenda.linearcollider.org/event/11033/contributions/59583/)          | on-going  |
 | Rare hadronic decays   |  S. Londoño (UNAL), C. Sandoval (UTEC), A. Martens    | [Plans 27/Feb](https://indico.cern.ch/event/1648232/#3-plans-at-ijclab-and-unal-bog)          | started    |
 | hadronic decays (theo)  |  P. Roig (Cinvestav)    | [Talk 18/May](https://indico.cern.ch/event/1669265/contributions/7084289/attachments/3276568/5854427/HadTauFCCPRoig.pdf)          | on-going    |
 | AFB[tau]     |  W. Weber, S. Monteil, R. Madar, K. Kroeninger  | [Talk November WS](https://indico.cern.ch/event/1588013/contributions/6767181/) | on-going    |
 | AFB[b], R[b] |  L. Roehrig., S. Monteil, R. Madar, , K. Kroeninger | [EPJC 85, 893 (2025)](https://doi.org/10.1140/epjc/s10052-025-14603-1) | published |
-| Tau LFV  (exp)    |  A. Lusiani (Pisa), M. Kazanecki (Polish Academy of Sciences), C. Martin (CIEMAT)                            | -           | starting |
+| Tau LFV  (exp)    |  A. Lusiani (Pisa), M. Kazanecki (Polish Academy of Sciences), C. Martin (CIEMAT)                            | [Talk on tau decays, September](https://indico.cern.ch/event/1710801/#3-tau-lfv-analysis-report)           | ongoing |
 | Tau LFV  (theo)    |  O. Sumensari (IJCLab), C. Cornella, P. Paradisi, E. Scantamburlo (Padua), L. Leal (USP), L. Allwicher (DESY)                            |  20/March: [1](https://indico.cern.ch/event/1662403/#3-exploring-lfv-decays-at-fcc) [2](https://indico.cern.ch/event/1662403/#4-impact-of-z-decays-on-lfv-th)         | on-going |
 | LFU |  A. Lusiani (Pisa)  | - | - | 
 | Tau g-2 (exp)     |  M. Pitt (CERN)                            | [Talk 27/Apr](https://indico.cern.ch/event/1669264/contributions/7025175/attachments/3263957/5828914/Tau_g2_MPitt.pdf)           | on-going |
